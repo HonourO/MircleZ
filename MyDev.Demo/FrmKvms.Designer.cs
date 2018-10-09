@@ -33,6 +33,7 @@
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -61,10 +62,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.机台名称ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -103,6 +103,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1172, 654);
             this.panel1.TabIndex = 3;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "CVD001",
+            "PHT001",
+            "CVD002",
+            "PHT002"});
+            this.checkedListBox1.Location = new System.Drawing.Point(3, 35);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(94, 119);
+            this.checkedListBox1.TabIndex = 2;
             // 
             // panel2
             // 
@@ -302,6 +316,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(527, 281);
             this.panel4.TabIndex = 6;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel6
             // 
@@ -422,22 +437,8 @@
             // 
             this.机台名称ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.机台名称ToolStripMenuItem.Name = "机台名称ToolStripMenuItem";
-            this.机台名称ToolStripMenuItem.Size = new System.Drawing.Size(143, 29);
+            this.机台名称ToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.机台名称ToolStripMenuItem.Text = "机台名称";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "CVD001",
-            "PHT001",
-            "CVD002",
-            "PHT002"});
-            this.checkedListBox1.Location = new System.Drawing.Point(3, 35);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(94, 119);
-            this.checkedListBox1.TabIndex = 2;
             // 
             // FrmKvms
             // 
